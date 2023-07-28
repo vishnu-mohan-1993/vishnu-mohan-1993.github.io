@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Non-Equilibrium Gas Dynamics Research</title>
+	<meta name="NEGD Research Group" content="This webpage contains research conducted by the non-equilibrium research group">
+	<meta name="author" content="Vishnu Mohan">
+	<link rel="stylesheet" href="styles.css" />
+</header>
+<body>
+	<div class="all-content">
+		<div class="content-wrap">
+			<header class="main-header">
+				<nav class="nav main-nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="profile.html">Profile</a></li>
+						<li><a href="pub.html">Publication</a></li>
+						<li>Research</li>
+						<li><a href="teach.html">Teaching</a></li>
+						<li><a href="photos.html">Photos</a></li>
+					</ul>
+				</nav>
+				<h1 class="group-name">
+					Non-Equilibrium Gas Dynamics Research
+				</h1>
+			</header>
+			<section class="content prof-container">
+				<h2>Rarefied Gas Flows</h2>
+				<div>
+					<p>DSMCFoam and Unified Gas Kinetic Scheme is being used to study rarefied gas flows. The Unified Gas Kinetic Scheme is OpenMP parallelized.</p>
+					<div>
+						<h3>Mixing layer simulations</h3>
+						<p>The Unified Gas Kinetic Scheme (UGKS) was used to study the effect of compressibility and rarefaction on the development of mixing layers. Different aspects of the flow, such as Kelvin-Helmholtz instability (KHI) and the breakdown of continuum hypothesis, were studied. We identified five different regimes of KHI in the Reynolds-Mach-Knudsen parameter space. An increase in the Knudsen number leads to deviation from the Navier-Stokes-Fourier (NSF) equation. We identified three different regimes of breakdown in continuum hypothesis. Gradient Knudsen number was identified, which scaled the local deviation from continuum hypothesis.</p>
+						<video width="auto" height="auto" autoplay><source src="vort_m02_kn1e-3.webm" type="video/webm"></video>
+					</div>
+					<div>
+						<h3>Rarefied Vogel-Escudier flow</h3>
+						<p>Work under progress</p>
+						<!--<img src="ve_dsmc.png" alt="ve_dsmc" height="850" width="1200">-->
+					</div>
+					<div>
+						<h3>Multi-jet interaction in rarefied conditions</h3>
+						<p>Work under progress</p>
+					</div>
+				</div>
+				<h2>Compressible Flow</h2>
+				<p>Compressible flow simulations are being done using three schemes. The Vogel-Escudier flows have been conducted using OpenFoam simulations. Structured and unstructured finite volume method based Boltzmann solver is also used to turbulent compressible flows in canonical settings. The structured FVM code is MPI-OpenMP hybrid parallelized, whereas the unstrutured code is parrallelized using OpenACC.</p>
+				<div>
+					<div>
+						<h3>Shock-Boundary layer interaction</h3>
+						<p>Work under progress</p>
+						<video width="1200" height="850" autoplay><source src="mach.webm" type="video/webm"></video>
+					</div>
+					<div>
+						<h3>Compressible Vogel-Escudier Flow</h3>
+							Work under progress
+					</div>
+					<div>
+						<h3>Bistability in suddenly-expanding confined-jet</h3>
+							Work under progress
+					</div>
+				</div>
+				<h2>Combustion</h2>
+				<p>A central difference based finite difference Navier-Stokes solver is used to study turbulent reacting flows. Reduced and detailed chemistry are used to simulate chemical reaction of diffferent species involved. This code is MPI parallelized, and is in the process of being parallelized using <a href="https://ops-dsl.readthedocs.io/en/latest/" target="_blank">Oxford Parallel library for Structured mesh solver</a>.</p>
+				<div>
+					<div>
+						<h3>Combustion of High-Hydrogen Content (HHC) fuel</h3>
+						<p>As part of the net-zero objective, countries are looking to move away from fossil fuels. An alternative fuel for combustion is hydrogen and other high hydrogen content fuel such as ammonia. However, because of difference in the physical and chemical properties, combustion characteristic of hydrogen is vastly different from hydrocarbons. Due to the presence of lighter species, HHC fuels are prone to thermodiffusive instabilities, making combustor prone to flashbacks. Moreover, due to the high temperature attained in hydrogen reaction, oxides of nitrogen, known to cause acid rains, could be released. Combustion of ammonia, below the SNCR temperature window is known to prevent formation of NOx. However, combustion of ammonia is slow. Simulations of hydrogen and ammonia combustion are being conducted in various canonical settings such as statistically planar 3D flame, shear flow etc.</p>
+						<img src="c_temp.jpeg" alt="contour" height="750" width="1200">
+					</div>
+				</div>
+				<h2>In-house codes/Open-source codes</h2>
+				NEGD lab uses multiple codes to study multiple aspects of non-equilibrium gas flows. These are listed below:
+				<ul>
+					<li> 2D structured finite volume Unified Gas Kinetic scheme based solver for Boltzmann transport equation in rarefied regime</li>
+					<li> 3D unstructured finite volume Gas Kinetic Scheme based solver for Boltzmann transport equation in continuum regime</li>
+					<li> 3D structured finite volume Gas Kinetic Scheme based solver for Boltzmann transport equation in continuum regime</li>
+					<li> SENGA+: 3D central finite difference based Navier-Stokes solver for reacting flows</li>
+				</ul>
+				<h2>Collaborators:</h2>
+				<ul>
+					<li> <a href="https://home.iitm.ac.in/sameen/index.html">Prof. A. Sameen</a></li>
+					<li> <a href="https://mech.iitm.ac.in/meiitm/personnal/dr-balaji-srinivasan/">Prof. Balaji Srinivasan</a></li>
+					<li> Prof. T. Jayachandran</li>
+					<li> <a href="https://www.ncl.ac.uk/engineering/staff/profile/nilanjanchakraborty.html">Prof. Nilanjan Chakraborty</a></li>
+					<li> <a href="http://www.eng.cam.ac.uk/profiles/rsc10">Prof. Stewart R. Cant</a></li>
+					<li> <a href="https://www.unibw.de/lrt/personen/univ-prof-dr-ing-habil-markus-klein">Prof. Markus Klein</a></li>
+					<li> <a href="https://engineering.tamu.edu/aerospace/profiles/sgirimaji.html">Prof. S. S. Girimaji</a></li>
+					<li> <a href="https://www.colorado.edu/amath/manjul-sharma">Dr. Manjul Sharma</a></li>
+					<li> Dr. Shesh Dhurandhar</li>
+					<li> Mr. Aswin P.</li>
+					<li> Mr. Shivaprasad S.</li>
+				</ul>
+			</section>
+		</div>
+		<footer class="main-footer">
+			<div class="container main-footer-container">
+				<p> Copyright &copy 2023 Vishnu Mohan. All rights reserved. </p>
+				<ul class="nav footer-nav">
+					<li><a href="https://www.linkedin.com/in/vishnu-mohan-b3bba710a/" target="_blank"><img src="linkedin.png" alt="ldin" height="512" width="512"></a></li>
+					<li><a href="https://www.researchgate.net/profile/Vishnu-Mohan-9" target="_blank"><img src="Researchgate.png" alt="rgate" height="512" width="512"></a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

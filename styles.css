@@ -1,0 +1,179 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+* {
+	box-sizing: border-box;
+	font-family: Roboto Condensed;	
+	color : black;
+	background: white;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+.nav ul{
+	margin: 0;
+	background: transparent;
+}
+.nav li{
+	display: inline;
+	color: white;
+	font-size: 30px;
+	background: transparent;
+}
+.nav a{
+	display: inline-block;
+	padding: 0.5em;
+	color: white;
+	font-size: 30px;
+	background: transparent;
+}
+.nav a:hover{
+	background-color: rgba(255,255,255,0.3);
+}
+.main-nav{
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: bold;
+	background: transparent;
+}
+.main-nav li{
+	padding: 0 2.5%;
+	background: transparent;
+}
+.group-name{
+	text-align: center;
+	font-family: Tangerine;
+	font-size: 3em;
+	color: white;
+	background: transparent;
+}
+.main-header{
+	background-image: url("shock_diamond.png");
+	background-size: cover;
+	padding-bottom: 10px;
+}
+.all-content{
+	position: relative;
+	min-height: 100vh;
+}
+.content-wrap{
+	padding-bottom: 7.5em;
+}
+.content{
+	margin: 1em;
+
+}
+.container{
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 1.5em;
+}
+.container p{
+	text-align: center;
+	font-size: 1.1em;
+}
+.container a{
+	color: blue;
+}
+.container strong{
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.name-holder{
+	font-weight: bold;
+	font-size: 2.5em;
+	margin: 0.5em 0;
+	text-align: center;
+}
+.vm-image{
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%; 
+}
+.main-footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 0.25em 0;
+	background-color: grey;
+}
+.main-footer-container{
+	display: flex;
+	align-items: center;
+	background-color: grey;
+}
+.main-footer-container ul{
+	flex-grow: 1;
+	text-align: end;
+	background-color: grey;
+}
+.footer-nav{
+	padding: 0 0.5em;
+}
+.footer-nav img{
+	width: 30px;
+	height: 30px;
+	background-color: grey;
+}
+.main-footer-container p{
+	font-size: 0.9em;
+	background-color: grey;
+	color: white;
+}
+.prof-container a{
+	color: blue;
+}
+.prof-container strong{
+	font-size: 1.2em;
+}
+.prof-container p{
+	font-size: 1.1em;
+}
+.prof-container ul{
+	font-size: 1.2em;
+}
+.prof-container li{
+	padding: 1em;
+}
+.prof-container h2{
+	color: black;
+	font-size: 2em;
+	font-weight: bold;
+}
+.prof-container h3{
+	color: black;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.prof-container{
+	max-width: 1500px;
+	padding: 0 1.5em;
+}
+.block-content{
+	margin: 0 30px;
+}
+.prof-span{
+	display: inline-block;
+	width: 74%;
+}
+.prof-date-span{
+	display: inline-block;
+	width: 24%;
+}
+.sem-span{
+	display: inline-block;
+	width: 9%;
+}
+.course-span{
+	display: inline-block;
+	width: 89%;
+}
+.photos{
+	display: block;
+	margin: 0 auto;
+}
+.photo-box{
+	margin: 0 auto;
+	text-align: center;
+}
